@@ -49,7 +49,8 @@
     background: #f44336;
     transition: 1s;
 }
-nav .fa{
+
+ .fa{
     display: none;
 }
 @media(max-width: 700px){
@@ -338,7 +339,7 @@ h3{
     background-size: cover;
     text-align: center;
     color: #fff;
-    border-radius: 50px;
+    
 }
 
 .sub-header h1{
@@ -378,6 +379,7 @@ transition:  0.4s;
 font-weight: 900;
 font-size: 15px;
 }
+
 .nav ul{
     list-style: none;
     text-align: center;
@@ -388,6 +390,7 @@ font-size: 15px;
     display: inline-block;
     text-align: center;
     
+    
 }
 .nav a:hover {
     background:burlywood;
@@ -396,12 +399,14 @@ font-size: 15px;
 }
 .navv{
   height: auto;
-  width: 100%;
+  width: 40%;
   background: white;
-  /* justify-content: space-between; */
-  padding: 0 40px 0 80px;
-  flex-wrap: wrap;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-direction: row;
 }
+
 
 .gallery{
     margin: 10x 5px;
@@ -414,4 +419,23 @@ font-size: 15px;
 .gallery img:hover {
     filter: grayscale(100%);
     transform: scale(1.1);
+}
+
+.nav{
+   
+    width: 60%;
+    align-items: center;
+    color: rgb(177, 170, 170);
+}
+
+
+.con{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    border-bottom: gray 1px solid;
 }
